@@ -51,8 +51,7 @@ function run_inside() {
     cd qt5
     git checkout 5.6
     perl init-repository -f \
-        -no-webkit \
-        -module-subset=qtbase,qtxmlpatterns,qtdeclarative,qtsensors,qtmultimedia,qtgraphicaleffects,qtconnectivity,qtquickcontrols,qtlocation
+        --module-subset=qtbase,qtxmlpatterns,qtdeclarative,qtsensors,qtmultimedia,qtgraphicaleffects,qtconnectivity,qtquickcontrols,qtlocation,-qtwebkit,-qtwebkit-examples
     #git submodule update
 
     # Compile for arm v7
