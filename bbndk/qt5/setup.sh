@@ -10,7 +10,7 @@ function compile_bb10_qt53() {
 
     make distclean || true
 
-    # Configure qt 5.3 for armle
+    # Configure qt 5.6 f4or armle
     export PREFIX=$(readlink -f $1)
     export XPLATFORM=$2
     ./configure \
@@ -46,10 +46,10 @@ function run_inside() {
     mkdir -p /tmp/src
     cd /tmp/src
 
-    # Pull the code: qt 5.3: This is the latest version of qt5 that actually works
+    # Pull the code: qt 5.6: This is the latest version of qt5 that actually works
     git clone git://code.qt.io/qt/qt5.git
     cd qt5
-    git checkout v5.3.0
+    git checkout 5.6
     perl init-repository -f \
         -no-webkit \
         -module-subset=qtbase,qtxmlpatterns,qtdeclarative,qtsensors,qtmultimedia,qtgraphicaleffects,qtconnectivity,qtquickcontrols,qtlocation
