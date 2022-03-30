@@ -42,6 +42,7 @@ function run_inside() {
 function main() {
     if [ "$1" == "inside" ] ; then
         run_inside $*
+    fi    
 }
 
 main $*
