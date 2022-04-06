@@ -1,8 +1,8 @@
 #!/bin/bash
 # BASE_DIR="$( cd "$(dirname "${BASH_SOURCE[0]}" )" && pwd )"
 BASE_DIR="/home/admin/bin/bbndk"
-# ARCH=armle-v7
-ARCH=x86
+ARCH=armle-v7
+# ARCH=x86
 TARGET=qnx6
 
 LATEST_LINUX_JRE=`ls -lrt $BASE_DIR/features | awk '/com.qnx.tools.jre.linux/ {f=$NF};END{print f}'`
