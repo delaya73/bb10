@@ -47,9 +47,8 @@ function run_inside() {
     cd /tmp/src
 
     # Pull the code: qt 5.6: This is the latest version of qt5 that actually works
-    git clone git://code.qt.io/qt/qt5.git
+    git clone git://code.qt.io/qt/qt5.git --branch v5.6.3
     cd qt5
-    git checkout 5.6
     perl init-repository -f \
         --module-subset=qtbase,qtxmlpatterns,qtdeclarative,qtsensors,qtmultimedia,qtgraphicaleffects,qtconnectivity,qtquickcontrols,qtlocation,-qtwebkit,-qtwebkit-examples
     #git submodule update
