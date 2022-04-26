@@ -50,7 +50,7 @@ function run_inside() {
     git clone git://code.qt.io/qt/qt5.git --branch v5.6.3
     cd qt5
     perl init-repository -f \
-        --module-subset=qtbase,qtxmlpatterns,qtdeclarative,qtsensors,qtmultimedia,qtgraphicaleffects,qtconnectivity,qtquickcontrols,qtlocation,qtsvg,-qtwebkit,-qtwebkit-examples
+        --module-subset=qtbase,qtxmlpatterns,qtdeclarative,qtsensors,qtmultimedia,qtgraphicaleffects,qtconnectivity,qtquickcontrols,qtlocation,qtsvg,qtscript,-qtwebkit,-qtwebkit-examples
     #git submodule update
 
     # Compile for arm v7
